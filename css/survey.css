@@ -4,11 +4,78 @@
   width: 60%;
   padding: 10px;
 }
-
 form {
   margin: 0 auto;
+  padding-top: 30px;
   text-align: left;
   display: inline-block;
+}
+fieldset { 
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 40px;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: none;
+}
+#albums {
+	width: 300px;
+	height: 22px;
+	font-size: 16px;
+}
+#radio {
+	margin-top: 25px;
+	font-size: 20px;
+}
+legend {
+	font-size: 20px;
+}
+label {
+	margin-right: 20px;
+	font-size: 18px;
+}
+textarea {
+	width: 300px;
+	height: 100px;
+}
+#name,
+#email,
+#re-email {
+	padding: 7px 80px 7px 5px;
+	font-size: 15px;
+	font-family: 'Merriweather', serif;
+	
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+}
+#name:focus,
+#email:focus,
+#re-email:focus {
+	box-shadow: 5px 4px 5px rgba(20, 195, 244, 1);
+
+}
+.label-container {
+	padding: 15px 0;
+	width: 450px;
+	
+}
+button {
+	padding: 5px 10px;
+	margin-top: 10px;
+	font-size: 15px;
+}
+button:hover,
+button:focus {
+	background-color:rgba(20, 195, 244, 1);
+}
+
+input[attribue=value] {
+	opacity: .4;
 }
 
 .container{

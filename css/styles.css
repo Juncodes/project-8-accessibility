@@ -8,7 +8,7 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: #3A6355;
+  color: #ffb84d;
   background: #2d2b30;
 }
 
@@ -16,11 +16,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
+  color: #fff;
 }
 
 a:hover {
-  color: #999;
+  color: #ffb84d;
 }
 
 /* Section Styles */
@@ -37,7 +37,7 @@ a:hover {
 .nav {
   display: flex;
   justify-content: space-around;
-  font-weight: 700;
+  /* font-weight: 700; */ /* world too thick, hard to read */
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
@@ -48,6 +48,7 @@ a:hover {
   margin-right: auto;
   color: white;
   letter-spacing: 5px;
+  font-weight: bold;
 }
 
 .nav li {
@@ -56,20 +57,33 @@ a:hover {
 
 .nav a {
   transition: all .5s;
+  font-size: 20px; /* bigger font size for better legibility on title nav */
 }
 
 .nav a:hover {
-  color: white
+  color: #ffb84d;
 }
 
 header {
   text-align: center;
-  background: url('../img/concert02_with_text.jpg') no-repeat top center ;
+  background: url('../img/concert02_no_text.jpg') no-repeat top center ; 
   background-size: cover;
-  overflow: hidden;
   padding-top: 60px;
   height: 350px;
 }
+.main-bg-text-container {
+	margin-top: 20px;
+}
+#bg-text-one {
+	color: #000;
+	font-size:70px;
+}
+#bg-text-two {
+	color: red;
+	text-shadow: 1px 1px red;
+	font-size:40px;
+}
+
 
 .tag {
   color: black;
@@ -95,11 +109,11 @@ header .name{
   margin: 30px;
   padding: 20px 40px 40px;
   text-align: left;
-  border-top: 4px solid #781125;
+  border-top: 4px solid #ffb84d; /* orignal color #781125 too dark for contract */
   clear: both;
 }
 .card:hover {
-  border-color: #96731A;
+  border-color: #ffbe19;
 }
 
 
@@ -120,7 +134,7 @@ header .name{
 .heading{
   font-size: 2em;
   text-transform: uppercase;
-  color: #781125;
+  color: #ffb84d; 
   margin-top: 10px;
 }
 
@@ -146,17 +160,26 @@ footer ul {
 footer ul li {
   display: inline-block;
 }
-
+img {
+  width: 40px;
+  height: 40px;
+}
+a.social:hover {
+  opacity: 1;
+}
+/* Social links */
 a.social {
   display: inline-block;
   margin-left: 5px;
-  width: 30px;
-  height: 30px;
+  font-size: 30px;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
   background-size: 30px 30px;
-  opacity: .4;
+  opacity: .5;
   transition: all .5s;
 }
-
+/*
 a.twitter {
   background-image: url(../img/twitter-32.png);
 }
@@ -174,8 +197,7 @@ a.social:hover {
 }
 .clearfix {
   clear: both;
-}
-
+} */
 /* Styles for larger screens */
 @media screen and (min-width: 840px) {
 
@@ -203,7 +225,7 @@ a.social:hover {
   main p {
     line-height: 1.6em;
   }
-
+  
   .card{
     margin: 40px auto;
     padding: 20px 40px 40px;
@@ -225,4 +247,25 @@ a.social:hover {
     max-width: 1200px;
     margin: 40px auto;
   }
+}
+
+@media screen and (max-width: 839px) {
+	.main-bg-text-container {
+	margin-top: 20px;
+	}
+	#bg-text-one {
+		color: #000;
+		font-size: 50px;
+	}
+	#bg-text-two {
+		color: red;
+		text-shadow: 1px 1px red;
+		font-size: 30px;
+	}
+	p {
+		font-size: 20px;
+	}
+	h3 {
+		font-size: 20px;
+	}
 }

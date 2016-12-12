@@ -7,10 +7,43 @@ pre {
 .heading{
   display: inline-block;
   margin: 0;
+  
+  max-width: 90px;
+  width: 85px;
+}
+.nav > li > a {
+	padding: 0 15px 0 0;
 }
 
 .pick{
   width: 40px;
   height: 0%;
   padding: 10px;
+}
+
+h1 {
+	margin: 16px 0;
+}
+table{
+	text-align: left;
+	margin-left: 10%;
+}
+th {
+	font-size: 1.2em;
+}
+th, td {
+	padding: 5px 20px;
+}
+
+/* media query */
+@media screen and (max-width: 839px) {
+	table {
+		margin-left: 4%;
+		margin-top: 40px;
+		
+		width: 100%;
+	}
+	.card {
+		text-align: center; 
+	}
 }

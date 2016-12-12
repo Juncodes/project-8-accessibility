@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
       <meta charset="utf-8">
       <link href="css/styles.css" rel="stylesheet" type="text/css" />
@@ -11,33 +11,38 @@
   <body>
     <div class="main-nav">
       <ul class="nav">
-        <li class="name"><a href="#">Accessible Frog</a></li>
-        <li><a href="tour.html">Tour</a></li>
-        <li><a href="survey.html">Survey</a></li>
+        <li class="name" id="accessFrog"><a href="#" style="font-size:20px;">Accessible Frog</a></li>
+        <li class="pages"><a href="tour.html">Tour</a></li>
+        <li class="pages"><a href="survey.html">Survey</a></li>
       </ul>
     </div>
 
     <header>
+		<div id="bg-main-text-container">
+			<h1 id="bg-text-one" style="text-transform:uppercase; font-weight:700;">ACCESSABLE FROG</h1>
+			<h3 id="bg-text-two" style="font-weight:500;"> We Make Awesome Music</h3>
+		</div>
+			
     </header>
 
     <main>
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/soul_of_the_frog.jpg">
+          <img class="photo" src= "img/soul_of_the_frog.jpg" alt="picture of album cover for soul of the frog">
           <div class="information">
-            <p class="heading">New album out now</p>
-            <p>Soul of the Frog</p>
-            <p>Digital/CD/ 2 x LP</p>
-            <a href="#" class="buy">Purchase Album</a>
+            <h1 class="heading">New album out now</h1>
+            <h3>Soul of the Frog</h3>
+            <h3>Digital/CD/ 2 x LP</h3>
+            <a href="#" class="buy"><h3>Purchase Album</h3></a>
           </div>
         </div>
       </div>
 
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/lead_singer.jpg">
+          <img class="photo" src= "img/lead_singer.jpg" alt="picture of lead singer">
           <div class="information">
-            <p class="heading">About the band</p>
+            <h1 class="heading">About the band</h1>
             <p>Photo booth aliquip pinterest meggings. Sapiente commodo wolf put a bird on it fingerstache gentrify, meh polaroid vegan everyday carry.</p>
           </div>
         </div>
@@ -46,9 +51,9 @@
 
     <footer>
       <ul>
-        <li><a href="#" class="social twitter"></a></li>
-        <li><a href="#" class="social youtube"></a></li>
-        <li><a href="#" class="social spotify"></a></li>
+        <li><a href="img/twitter-32.png" class="social twitter"><img src= "img/twitter-32.png" alt="link to twitter"></a></li>
+        <li><a href="img/youtube-32.png" class="social youtube"><img src= "img/youtube-32.png" alt="link to youtube"></a></li>
+        <li><a href="img/spotify-32.png" class="social spotify"><img src= "img/spotify-32.png" alt="link to spotify"></a></li>
       </ul>
       <p class="copyright">Copyright 2015, Accessible Frog</p>
     </footer>
