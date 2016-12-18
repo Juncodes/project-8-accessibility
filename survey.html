@@ -13,13 +13,17 @@
   <body>
     <div class="main-nav">
       <ul class="nav">
-        <li class="name"><a href="index.html">Accessible Frog</a></li>
-        <li><a href="tour.html">Tour</a></li>
-        <li><a href="#">Survey</a></li>
+        <li class="name" id="accessFrog"><a href="#" style="font-size:20px;">Accessible Frog</a></li>
+        <li class="pages"><a href="tour.html">Tour</a></li>
+        <li class="pages"><a href="survey.html">Survey</a></li>
       </ul>
     </div>
 
-    <header>
+     <header>
+		<div id="bg-main-text-container">
+			<h1 id="bg-text-one" style="text-transform:uppercase; font-weight:700;">ACCESSABLE FROG</h1>
+			<h3 id="bg-text-two" style="font-weight:500;"> We Make Awesome Music</h3>
+		</div>	
     </header>
 
     <main>
@@ -31,29 +35,37 @@
             <form class ="survey">
 	            <fieldset id="radio">
 					<legend>Who is your favorite band member:</legend>
-					<input type="radio" name="res" value="John"> John
-					<input type="radio" name="res" value="Hazzard"> Hazzard
-					<input type="radio" name="res" value="Bob"> Bob
-					<input type="radio" name="res" value="Sally"> Sally
+					
+					<label for="John">John</label>
+					<input id="John" type="radio" name="res" value="John"> 
+					
+					<label for="hazzard">Hazzard</label>
+					<input id="hazzard" type="radio" name="res" value="Hazzard"> 
+					
+					<label for="bob">Bob</label>
+					<input id="bob" type="radio" name="res" value="Bob"> 
+					
+					<label for="sally">Sally</label>
+					<input id="sally" type="radio" name="res" value="Sally"> 
 				</fieldset>
 				<fieldset id="select">
-					<legend>What is your favorite album:</legend>
+					<label>What is your favorite album:</label>
 						<select id="albums" name="select">
-							<option value="1">Party For An Angel</option>
-							<option value="2">A Day Of Old</option>
-							<option value="3">Finding My Shadow</option>
-							<option value="4">Diamond Fireworks</option>
-							<option value="5">Enjoy Your Desire</option>
-							<option value="6">This Is For You</option>
+							<option value="1">A Day Of Old</option>
+							<option value="2">Diamond Fireworks</option>
+							<option value="3">Enjoy Your Desire</option>
+							<option value="4">Finding My Shadow</option>
+							<option value="5">Heroic Forever</option>
+							<option value="6">Midnight Fires</option>
 							<option value="7">Music Of My Life</option>
 							<option value="8">Song For Yesterday</option>
-							<option value="9">Heroic Forever</option>
-							<option value="10">Midnight Fires</option>
-							<option value="11">Street Of The Rider</option>
+							<option value="9">Street Of The Rider</option>
+							<option value="10">Party For An Angel</option>
+							<option value="11">This Is For You</option>
 						</select>
 			  	</fieldset>
 			  	<fieldset>
-	              <legend>What is your favorite song:</legend>
+	              <label>What is your favorite song:</label>
 	              <textarea></textarea>
 			  	</fieldset>
             </form>
@@ -73,7 +85,7 @@
 				
 				<div class="label-container">
 					<label for="email">Email:</label>
-					<input id="email" type ="email" aria-describedby="email-control" name="textfield" placeholder="Email"><br>
+					<input id="email" type ="email" name="textfield" placeholder="Email"><br>
 				</div>
 				
 				<div class="label-container">

@@ -9,16 +9,20 @@
       <title>Accessible Frog</title>
   </head>
 
-  <body>
+   <body>
     <div class="main-nav">
       <ul class="nav">
-        <li class="name"><a href="index.html">Accessible Frog</a></li>
-        <li><a href="#">Tour</a></li>
-        <li><a href="survey.html">Survey</a></li>
+        <li class="name" id="accessFrog"><a href="#" style="font-size:20px;">Accessible Frog</a></li>
+        <li class="pages"><a href="tour.html">Tour</a></li>
+        <li class="pages"><a href="survey.html">Survey</a></li>
       </ul>
     </div>
 
-    <header>
+     <header>
+		<div id="bg-main-text-container">
+			<h1 id="bg-text-one" style="text-transform:uppercase; font-weight:700;">ACCESSABLE FROG</h1>
+			<h3 id="bg-text-two" style="font-weight:500;"> We Make Awesome Music</h3>
+		</div>		
     </header>
 
     <main >
@@ -30,10 +34,11 @@
           <h1 class= "heading">Tour Dates</h1>
           <img class="pick" src= "img/guitar_pick.png" alt="">
           <table>
+	          <caption>Location</caption>
 	          <tr>
-		          <th>Date</th>
-		          <th>Venue</th>
-		          <th>Location</th>
+		          <th scope="col">Date</th>
+		          <th scope="col">Venue</th>
+		          <th scope="col">Location</th>
 	          </tr>
 	          <tr>
 		          <td>Mar 10 - 12</td>

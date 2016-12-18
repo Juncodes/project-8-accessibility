@@ -9,10 +9,12 @@ pre {
   margin: 0;
   
   max-width: 90px;
-  width: 85px;
 }
-.nav > li > a {
-	padding: 0 15px 0 0;
+caption {
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom: 2px solid;
+	margin-bottom: 10px;
 }
 
 .pick{
@@ -21,9 +23,6 @@ pre {
   padding: 10px;
 }
 
-h1 {
-	margin: 16px 0;
-}
 table{
 	text-align: left;
 	margin-left: 10%;
